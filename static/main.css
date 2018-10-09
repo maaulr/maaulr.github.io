@@ -1,0 +1,90 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    max-height: 100vh;
+    background: black no-repeat center/100% url("https://source.unsplash.com/RCAhiGJsUUE");
+    /* background: no-repeat center/135% url("./assets/wallshelf.jpg"); */
+    background-size: cover;
+    font-family: 'Arvo', serif;
+    color: rgb(204, 204, 204);
+}
+
+.container {
+    /* border: 2px solid navy; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.main {
+    border-bottom: 1px dotted rgba(204, 204, 204, 0.8);
+}
+
+#hello {
+    border-bottom: 4px solid rgba(204, 204, 204, 0.5);;
+    margin: 4px 0;
+    padding: 4px 0;
+}
+
+#hello h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#hello h2 {
+    font-size: 2em;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.does {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.does-item {
+    margin-right: .5em;
+}
+
+a[class=does-item]:hover {
+    background-color: rgb(204, 204, 204);
+    color: rgba(9, 9, 9, 0.8);
+    font-style: italic;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+.navbar p, a, i {
+    margin: 0;
+    text-transform: capitalize;
+    text-decoration-line: none;
+    color: rgb(205, 205, 205);
+}
+
+.navbar #socmed a:first-child {
+    margin-right: 4px;
+}
+
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow:  0 0 2px rgb(255, 255, 255);
+}
